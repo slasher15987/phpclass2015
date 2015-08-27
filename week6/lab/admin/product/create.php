@@ -4,6 +4,7 @@
         include '../../functions/product-functions.php';
         include '../../functions/util.php';
         include '../../includes/access-required.html.php';
+        require '../../includes/session-start.rec.inc.php';
         $categories = getAllCategories();
 
         if (isPostRequest()) {

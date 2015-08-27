@@ -10,6 +10,7 @@
         include '../../functions/category-functions.php';
         include '../../functions/util.php';
         include '../../includes/access-required.html.php';
+        require '../../includes/session-start.rec.inc.php';
         $results = '';
         if (isPostRequest()) {
 
