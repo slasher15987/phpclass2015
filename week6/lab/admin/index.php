@@ -7,10 +7,10 @@
     <body>
         <?php
         
-            include_once '../functions/dbconnect.php';
+            include_once '../functions/dbConn.php';
             include_once '../functions/login-function.php';
-            include_once '../functions/until.php';
-        
+            include_once '../functions/util.php';
+            
             if ( isPostRequest() ) {
                 
                 $email = filter_input(INPUT_POST, 'email');

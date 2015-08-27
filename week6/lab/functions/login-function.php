@@ -8,7 +8,7 @@
  */
 function isValidUser( $email, $pass ) {
     
-    $db = dbconnect();
+    $db = getDB();
     $stmt = $db->prepare("SELECT * FROM users WHERE email = :email and password = :password");
     $pass = sha1($pass);
     $binds = array(

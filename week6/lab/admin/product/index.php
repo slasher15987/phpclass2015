@@ -1,11 +1,12 @@
 <?php
 //db connection and post/get functions
 include '../../functions/dbConn.php';
+require '../../includes/session-start.rec.inc.php';
 include '../../functions/category-functions.php';
 include '../../functions/product-functions.php';
 include '../../functions/util.php';
 include '../../includes/access-required.html.php';
-require '../../includes/session-start.rec.inc.php';
+
 //hold db connection
 $db = getDB();
 /*
