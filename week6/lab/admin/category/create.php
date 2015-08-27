@@ -9,7 +9,7 @@
         include '../../functions/dbConn.php';
         include '../../functions/category-functions.php';
         include '../../functions/util.php';
-
+        include '../../includes/access-required.html.php';
         $results = '';
         if (isPostRequest()) {
 
